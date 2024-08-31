@@ -1,0 +1,37 @@
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:UpdateSecret"
+            ],
+            "Resource": [
+                "secreteARN"
+            ]
+        },
+        {
+            "Sid": "Statement2",
+            "Effect": "Allow",
+            "Action": [
+                "elasticache:ModifyUser"
+            ],
+            "Resource": [
+                "cacheARN"
+            ]
+        },
+        {
+            "Sid": "Statement3",
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetRandomPassword"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Id": "default",
+    "Statement": [
+      {
+        "Sid": "default",
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "secretsmanager.amazonaws.com"
+        },
+        "Action": "lambda:InvokeFunction",
+        "Resource": "ARN of secrete to allow invokation"
+      }
+    ]
+  }
